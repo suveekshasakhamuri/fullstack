@@ -1,0 +1,34 @@
+<html>
+   <head>
+     <script>
+        function check()
+        {
+           let name=document.getElementById("t1").value;
+           let age=parseInt(document.getElementById("t2").value);
+           //alert(age>=18?"Voter can vote":"Voter cant vote");
+           //document.write(age>=18?"Voter can vote":"Voter cant vote");
+           document.getElementById("t11").innerHTML=name;
+           document.getElementById("t22").innerHTML=age;
+           document.getElementById("t33").innerHTML=age>=18?"Voter can vote":"Voter cant vote";
+        }
+     </script>
+   </head>
+   <body>
+      <label>Enter your name</label>
+      <input type="text" id="t1"><br>
+      <label>Enter your Age</label>
+      <input type="text" id="t2"><br>
+      <button onclick="check()">Check Eligibility</button><br><br>
+      <table border="1">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Eligibility</th>
+        </tr>
+           <td id="t11">  </td>
+           <td id="t22">  </td>
+           <td id="t33">  </td>
+        <tr>
+        </tr>
+   </body>
+</html>
